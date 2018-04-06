@@ -2,7 +2,7 @@ module.exports = [
 {
 	"id":"1",
 	"response":{
-    	"lastModifiedDate": 1522924144859,
+    	"lastModifiedDate": 1523056094910,
     	"_id": "1",
     	"älgorithmId": 1,
     	"active": true,
