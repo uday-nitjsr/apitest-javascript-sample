@@ -1,0 +1,34 @@
+module.exports = [{
+	"expected_id":"2",
+	"expected_link":"/data/analytics/2",
+	"post_data":{
+ 			"_id":2,
+  			"älgorithmId":2,
+  			"active":true,
+  			"workorders":100,
+  			"avgThreshold":2,
+  			"totalThreshold":100,
+  			"automaticThreshold":3,
+  			"humanThreshold":2,
+  			"recurringThresolds":12,
+  			"avgHumanInteraction":3,
+  			"NYAEvents":20
+ 		}
+},
+{
+	"expected_id":"3",
+	"expected_link":"/data/analytics/3",
+	"post_data":{
+ 			"_id":3,
+  			"älgorithmId":3,
+  			"active":true,
+  			"workorders":100,
+  			"avgThreshold":2,
+  			"totalThreshold":100,
+  			"automaticThreshold":3,
+  			"humanThreshold":2,
+  			"recurringThresolds":12,
+  			"avgHumanInteraction":3,
+  			"NYAEvents":20
+ 		}	
+}];
