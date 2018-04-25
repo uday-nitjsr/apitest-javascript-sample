@@ -123,4 +123,26 @@ Feature('Algorithm api',()=>{
 			expect(response.body.errmsg).to.eq('E11000 duplicate key error collection: vts.algorithms index: _id_ dup key: { : \"1\" }');
 		}); 
 	});
+
+	// Scenario('verify algorithm is not created with blank data');
+
+	Scenario('verify the reponse of algorithm is proper has details of specific algorithm with id provided in URI',()=>{
+		var token,response;
+		Given('I login application with admin',(done)=>{
+			api.post("/data/users/action/doLogin")
+			.send({
+				"username":admin.username,
+				"password":admin.password
+			})
+			.end(function(err,res){
+				response = res;
+				done();
+			});
+		});
+
+		When('I use algorithm api for',()=>{
+			api.get("/data/algorithms/1")
+			.set("accessToken",token);
+		});
+	});
 });
