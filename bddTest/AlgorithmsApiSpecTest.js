@@ -1,7 +1,7 @@
 var should = require('chai').should(),
     expect = require('chai').expect,
     supertest = require('supertest'),
-    api = supertest('http://localhost:9999'),
+    api = supertest('https://vts.qa.buyitinstalled.co/api'),
     getUser = require('../data/getData/getUserWithId.js'),
     getAlgo = require('../data/getData/getAlgorithmWithId.js');
 
